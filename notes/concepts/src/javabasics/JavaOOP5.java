@@ -1,18 +1,11 @@
 package javabasics;
 
-// 1. Inheritance
-// 2. Abstraction
-// 3. Polymorphism
-// 4. Encapsulation
-
-// 1. Inheritance
-
-class Computer{
+class Computer1{
 
     int sno;
     String cname;
 
-    Computer(int sno,String cname){
+    Computer1(int sno,String cname){
         this.sno = sno;
         this.cname = cname;
     }
@@ -23,11 +16,11 @@ class Computer{
 
 }
 
-class Laptop extends Computer{
+class Laptop1 extends Computer1{
 
     String touchPad;
 
-    Laptop(int sno, String cname, String touchPad) {
+    Laptop1(int sno, String cname, String touchPad) {
         super(sno, cname);
         this.touchPad = touchPad;
     }
@@ -38,14 +31,14 @@ class Laptop extends Computer{
 
 }
 
-public class JavaOOP1 {
+public class JavaOOP5 {
 
     public static void main(String[] args){
-        Computer cmp = new Computer(11,"Dell");
-        Laptop laptop = new Laptop(22,"HP","G5");
+        //Computer1 cmp = new Computer1(11,"Dell");
+        Computer1 cmp = new Laptop1(22,"HP","G5");
 
         cmp.computerInfo();
-        laptop.computerInfo();
+        //laptop.computerInfo();
 
 
     }
